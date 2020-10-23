@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <style>
+        
+        body{
+            background-color: black;
+        }
+
+        .menu {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        align-content: center;
+        background-color: rgba(50, 108, 233, 0.644);
+        box-shadow:3px 3px 15px rgba(206, 206, 206, 0.493);
+        color: blanchedalmond;
+        padding: 10px;
+        height: 150px;
+        width: 90%;
+        margin-top: 100px;
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: 100px;
+        border-radius: 20px;
+    
+      }
+
+      .divimg{
+          padding: 20%;
+        
+      }
+    </style>
+    
+    <div>
+
+   
+    
+<script>
+    var tutoringResumes = [
+  {
+      profile: '<img style="width: 100px; height: 120px; border-radius: 5px;" src="./profile-pics/english-teacher.jpg" >',
+      name: "Ms. Noor",
+      degree: "Bachelor",
+      experience: "Teaches high school students"
+  },
+
+  {
+      profile: '<img style="width: 100px; height: 120px; border-radius: 5px;" src="./profile-pics/math-teacher.png" >',
+      name: "Ms. Mike",
+      degree: "Bachelor",
+      experience: "taught for 10 years"
+  },
+
+  {
+      profile: '<img style="width: 100px; height: 120px; border-radius: 5px;" src="./profile-pics/ physics-teacher.jpg" >',
+      name: "Ms. Henry",
+      degree: "Bachelor",
+      experience: "5 years of teaching high school students"
+  }
+]
+
+
+tutoringResumes.forEach(tutor => {
+  var div = document.querySelector('div')
+
+  div.innerHTML = div.innerHTML + `
+        <div class = "menu" >
+          <span class = "divimg">
+          ${tutor.profile}
+          </span>
+          <br>   Name:  ${tutor.name } <br> Degree: ${tutor.degree} <br> Experience:  ${tutor.experience } <br>
+        </span>
+          <span>s
+          </div>
+
+      
+`
+})
+</script>
+</body>
+</html>

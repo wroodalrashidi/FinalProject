@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<style>
+    
+body{
+    background-color: rgba(0, 0, 0, 0.767);
+}
+
+h2{
+font-size: 40px;
+color: white;
+text-align: center;
+
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    background-color: rgba(50, 108, 233, 0.644);
+    box-shadow:3px 3px 15px rgba(206, 206, 206, 0.493);
+    padding: 15px;
+    height: 500px;
+    width: 550px;
+    margin-top: 40px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 50px;
+    border-radius: 20px;
+
+  }
+
+  input[type=text], select, textarea{
+    display: block;
+    margin: auto;
+    margin-top: 50px;
+    width: 500px;
+    height: 50px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+    font-size: 18px;
+  }
+  input[type=password], select, textarea{
+    display: block;
+    margin: auto;
+    margin-top: 50px;
+    width: 500px;
+    height: 50px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+    font-size: 18px;
+  }
+  
+
+  /* submit button */
+  input[type=submit] {
+    display: block;
+    margin: auto;
+    background-color: #05054794;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    float: center;
+    margin-top: 20px;
+    height: 50px;
+    width: 100px;
+  }
+
+  input[type=submit]:hover {
+    color: rgb(172, 170, 169);
+    background-color: rgba(46, 44, 46, 0.651);
+  }
+
+</style>
+
+    <form action="mailto:joincoded.com" method="post" enctype="text/plain" >
+        <input type="text" name="name" placeholder="Full Name">
+        <input type="text" name="email" placeholder="Emai">
+        <input type="text" name="subject" placeholder="Subject">
+        <input type="text" name="about" placeholder="What's the problem">
+            <input type="submit" name="submit" value="Submit">
+        </form> 
+
+        <script>
+function validateForm() {
+    var name = document.forms["myForm"]["name"].value;
+    var email = document.forms["myForm"]["email"].value;
+    var subject = document.forms["myForm"]["subject"].value;
+    var about = document.forms["myForm"]["about"].value;
+
+
+    if (name == "") {
+      alert("First Name must be filled out");
+      return false;
+    
+    } else if (last == "") {
+        alert("Last Name must be filled out");
+        return false;
+    
+    } else if (email == "") {
+        alert("Email must be filled out");
+        return false;
+    
+    } else if (password == "") {
+        alert("Password must be filled out");
+        return false;
+    
+    } else{
+        alert("Error");  
+    }
+
+}
+
+</script>
+
+
+
+</body>
+</html>

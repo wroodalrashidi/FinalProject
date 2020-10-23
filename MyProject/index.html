@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مهراتي</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+	<link href="style.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://m.w3newbie.com/you-tube.css">
+    
+</head>
+<body>  
+
+   
+<!-- navbar -->
+<nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top " >
+    <div  class="container-fluid">
+        <a class="navbar-brand" >
+            <h1 style="color: rgb(245, 244, 239);">مهاراتي</h1>
+            
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+            <span class="navbar-toggler-icon" ></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive" >
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"  >
+                <a class="nav-link" href="#sectionLink1" > Categories</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#sectionLink2">  About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#sectionLink3"> Sugessions</a>
+            </li>
+            <li class="nav-item">
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+            <input type="text" id="searchInput" placeholder="Search">
+            <ul id="categories">
+               <li><a href="./categories/tutoring.html">Tutoring</a></li>
+               <li><a href="./categories/programming.html">Programming</a></li>
+               <li><a href="./categories/design.html">Design</a></li>
+               <li><a href="./categories/handyman.html">Handy man</a></li>
+               <li><a href="#sectionLink3">Contact</a></li>
+              </ul>
+            </li>
+            </ul>
+            
+        </div>
+        
+        
+          
+      </div>
+    </div>
+</nav>
+ <!--- Image Slider -->
+ <div id="slides" class="carousel slide" data-ride="carousel">
+    <ul class="carousel-indicators">
+        <li data-target="#slides" data-slide-to="0" class="active"></li>
+        <li data-target="#slides" data-slide-to="1"></li>
+        <li data-target="#slides" data-slide-to="2"></li>
+    </ul>
+    <div class="carousel-inner">
+        <div class="carousel-item active" >
+            <img src="./images/imageslider1.jpeg" class="col-12" style="height: 650px; width: 1450px">
+            <div class="carousel-caption">
+                <h1 class="display-2" style="color: rgb(50, 108, 233);">مهراتي</h1>
+                <h3 class="slogan">محتاج مهارة؟ عندنا المطلوب </h3>
+                <a href="./Sign up form/sign-up.html"><button type="button" class="btn btn-outline-light btn-lg">Sign in</button></a>
+                <!-- <button type="button" class="btn btn-primary btn-lg "> get started</button> -->
+            </div>
+        </div>
+        <div class="carousel-item ">
+            <h1 class="carousel-caption" style="color: rgb(50, 108, 233);" >ُTutor</h1>
+            <img src="./images/imageslider2.jpeg" class="col-12" style="height: 650px; width: 1450px">
+        </div>
+        <div class="carousel-item ">
+            <h1 class="carousel-caption " style="color: rgb(50, 108, 233);">Handy man</h1>
+            <img src="./images/imageslider4.jpeg" class="col-12" style="height: 650px; width: 1450px">
+        </div>
+    </div>
+  
+</div>
+
+<!-- The Categories -->
+    <div class="container-fluid padding" >
+<div class=" menu  " id="section1" >
+    <div class="col-xs-12 col-sm-6 col-md-3">
+    <div class="menu2 imgs" >
+        <a href="./categories/tutoring.html" > <h4>Tutoring </h4> <img class="icons"  src="./images/tutoring.png" alt="Tutoring icon" /></a></div>
+    </div>
+    <div class="col-xs-12 col-sm-6 col-md-3">
+        <div class="menu2 imgs">
+            <a href="./categories/programming.html" > <h4>Programming </h4> <img class="icons"  src="./images/programming.png" alt="Programming icon" /></a></div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-3">
+            <div class="menu2 imgs">
+        <a href="./categories/design.html" > <h4> Design </h4> <img class="icons"  src="./images/design.png" alt="Design icon" /></a></div>
+    </div>
+    <div class="col-xs-12 col-sm-6 col-md-3">
+        <div class="menu2 imgs">
+            <a href="./categories/handyman.html" > <h4>Handy Man </h4> <img class="icons"  src="./images/handyman.png" alt="handy man icon" /></a></div>
+    
+        </div>
+        </div>
+
+</div>
+<!-- Quiz -->
+<div class="container-fluid padding" >
+<div class="menu3" id="section2">
+    <div class="quiz-container">
+        <!-- <div class="title">Personality Quiz</div> -->
+        <div id="question" class="question"></div>
+        <label class="option">
+            <input type="radio" name="option" value="1" />
+            <span class="option1"></span>
+        </label>
+        <label class="option">
+            <input type="radio" name="option" value="2" />
+            <span class="option2"></span>
+        </label>
+        <label class="option">
+            <input type="radio" name="option" value="3" />
+            <span class="option3"></span>
+        </label>
+        <!-- Buttons -->
+        <div class="controls">
+            <button class="previous">Previous</button>
+            <button class="next">Next</button>
+        </div>
+    </div>
+
+    <div class="result">
+
+    </div>
+
+
+
+</div>
+</div>
+<!-- Sugessions -->
+<div class="menu gradient1 sugession" id="section3" >
+<input type="text" id="suggestion" placeholder="Suggestion"></input>
+<input type="button" id="button1" value="Add" onclick="add_element_to_array();"></input>     
+<input type="button" id="button2" value="Display" onclick="display_array();"></input>
+<div id="Result"></div> 
+    
+    
+</div>
+
+
+<!-- Side bar -->
+<div class="container-fluid">
+<div id="mySidenav" class="sidenav">
+    <a  target="_blank" href="https://www.instagram.com/joincoded/?hl=en" id="insta">Instgram</a>
+    <a href="./Sign up form/sign-up.html" id="sign-up"> Sign up</a>
+    <a  target="_blank" href="https://twitter.com/joincoded?lang=en" id="twitter">Twitter</a>
+
+    
+  </div> 
+</div> 
+  <div style="margin-left:80px;"></div>
+
+  <!--  footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-6">
+          <h6>About</h6>
+          <p class="text-justify"> My skills is a website that helps people who are in need of a specific skill, but can’t seem to find them. Makes it easier for the skilled people to display their work, and anyone can find them. </p>
+        </div>
+
+        <div class="col-xs-6 col-md-3">
+          <h6>Social Media</h6>
+          <ul class="footer-links">
+            <li><a  target="_blank" href="https://twitter.com/joincoded?lang=en">Twitter</a></li>
+            <li><a  target="_blank" href="https://www.instagram.com/joincoded/?hl=en">Instgram</a></li>
+            <li><a  target="_blank" href="https://www.youtube.com/channel/UCEQ52yFsXoK9pJu8Fky6yDg">Youtube</a></li>
+           
+          
+          </ul>
+        </div>
+      </div>
+      <hr>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-sm-6 col-xs-12">
+          <p class="copyright-text">Copyright &copy; 2020 All Rights Reserved by 
+       <a target="_blank" href="https://github.com/wroodalrashidi">Wrood Alrashidi</a>.
+          </p>
+          
+        </div>
+      </div>
+    </div>
+</footer>
+     
+<script src="./script.js"></script> 
+ 
+</body>
+</html>
