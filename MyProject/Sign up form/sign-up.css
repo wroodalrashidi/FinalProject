@@ -1,6 +1,5 @@
 body{
-  background: #2962FF;
-
+  background-color: #0e6cc4;
 }
 
 h2{
@@ -17,7 +16,7 @@ text-align: center;
     justify-content: space-around;
     align-items: center;
     align-content: center;
-    background-color: rgba(50, 108, 233, 0.644);
+    background-color: rgba(193, 195, 199, 0.767);
     box-shadow:3px 3px 15px rgba(206, 206, 206, 0.493);
     /* padding: 15px; */
     height: 500px;
@@ -62,7 +61,7 @@ text-align: center;
   input[type=submit] {
     display: block;
     margin: auto;
-    background-color: #05054794;
+    background-color: #235edd94;
     color: white;
     padding: 12px 20px;
     border: none;
@@ -72,15 +71,20 @@ text-align: center;
     margin-top: 20px;
     height: 50px;
     width: 100px;
+
   }
 
   input[type=submit]:hover {
-    color: rgb(172, 170, 169);
-    background-color: rgba(46, 44, 46, 0.651);
+    color: rgb(211, 208, 208);
+    background-color: rgba(33, 57, 136, 0.822);
+    transform: scale(1.1);
+    transition: all 0.2s;
+    cursor: pointer;
   }
  
     /* Background */
     HTML  CSS Result
+
 body{
     margin: 0;
     padding: 0;
