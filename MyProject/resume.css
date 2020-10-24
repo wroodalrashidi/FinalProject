@@ -1,12 +1,12 @@
 body{
-    background-color: black;
+    background: #4a4d80;  
 }
 
 .menu {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    /* justify-content: space-evenly; */
+    background-color: rgba(219, 218, 236, 0.774);
     align-items: center;
     align-content: center;
     box-shadow:3px 3px 15px rgba(206, 206, 206, 0.493);
@@ -14,12 +14,11 @@ body{
     padding-top: 20px;
     height: 550px;
     width: 850px;
-    margin-top: 70px;
     margin-right: auto;
     margin-left: auto;
-    margin-bottom: 70px;
     border-radius: 20px;
-
+    margin-top: 50px;
+   
   }
 
   .profile-pics{
@@ -31,60 +30,66 @@ body{
 h4{
     font-size: 35px;
     font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    color: white;
 }
 
 p{
       font-size: 20px;
       font-family: 'Courier New', Courier, monospace;
+      text-align: center;
   }
-  /* Gradient background */
-.gradient1 {
-    background: linear-gradient(154deg, #44509c, #3a6ba3, #622eb6, #97469e);
-    background-size: 800% 800%;
+
+  input[type=button] {
+    display: block;
+    margin: auto;
+    background-color: #8c8cc2c9;
+    color: white;
+    padding: 1px 1px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    float: center;
+    margin-top: 50px;
+    height: 30px;
+    width: 100px;
   
-    -webkit-animation: gradient1 14s ease infinite;
-    -moz-animation: gradient1 14s ease infinite;
-    animation: gradient1 4s ease infinite;
   }
+
+  input[type=button]:hover {
+    color: rgb(240, 237, 235);
+    background-color: rgba(150, 146, 150, 0.89);
+    transition: all .2s ease-in-out;
+    transform: scale(1.1);
+    box-shadow: 2px 2px 10px rgba(206, 206, 206, 0.493);
+  }  
+
+  #goBack[type=button] {
+    background-color: #efeff394;
+    color: white;
+    padding: 1px 1px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    float: center;
+    margin-top: 50px;
+    height: 30px;
+    width: 100px;
   
-  @-webkit-keyframes gradient1 {
-    0% {
-      background-position: 79% 0%
-    }
-  
-    50% {
-      background-position: 22% 100%
-    }
-  
-    100% {
-      background-position: 79% 0%
-    }
   }
-  
-  @-moz-keyframes gradient1 {
-    0% {
-      background-position: 79% 0%
-    }
-  
-    50% {
-      background-position: 22% 100%
-    }
-  
-    100% {
-      background-position: 79% 0%
-    }
-  }
-  
-  @keyframes gradient1 {
-    0% {
-      background-position: 79% 0%
-    }
-  
-    50% {
-      background-position: 22% 100%
-    }
-  
-    100% {
-      background-position: 79% 0%
-    }
+
+  #goBack[type=button]:hover {
+    color: rgb(240, 237, 235);
+    background-color: rgba(218, 162, 240, 0.719);
+    transition: all .2s ease-in-out;
+    transform: scale(1.1);
+    box-shadow: 2px 2px 10px rgba(206, 206, 206, 0.493);
+  }  
+
+ 
+  /* Background */
+  .ball {
+    position: absolute;
+    border-radius: 100%;
+    opacity: 0.7;
   }
