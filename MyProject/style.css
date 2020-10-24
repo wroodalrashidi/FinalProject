@@ -568,4 +568,17 @@ button:focus {
   align-self: center;
 
 }
-
+/* logos in the footer */
+.logos{
+  background-color: rgb(62, 62, 65);
+  border-radius: 20px;
+height: 40px;
+width: 40px;
+padding: 3px;
+margin-bottom: 10px;
+}
+.logos:hover{
+  transform: scale(1.3);
+transition: all 0.2s;
+box-shadow: 1px 1px 10px rgba(190, 187, 187, 0.692);
+}
