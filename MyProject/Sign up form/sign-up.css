@@ -1,10 +1,7 @@
-.ball {
-  position: absolute;
-  border-radius: 100%;
-  opacity: 0.9;
+body{
+  background: #0af;
 
 }
-
 h2{
 font-size: 40px;
 color: white;

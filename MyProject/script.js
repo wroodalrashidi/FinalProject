@@ -113,7 +113,7 @@ const questions = [
     "answer1Total": "1",
     "answer2": "Money",
     "answer2Total": "3",
-    "answer3": "Bothx",
+    "answer3": "Both",
     "answer3Total": "2"
   },
   {
