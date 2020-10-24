@@ -94,7 +94,7 @@ html {
   display: flex;
   align-items: center;
   align-content: center;
-  height: 500px;
+  height: 550px;
   align-items: center;
   align-content: center;
   background-color: rgba(50, 108, 233, 0.644);
@@ -193,7 +193,7 @@ li {
 }
 /* Gradient background */
 .gradient1 {
-  background: linear-gradient(154deg, #434e99, #2e3da8, #183d5a, #9fb7c9);
+  background: linear-gradient(154deg, #44509c, #3a6ba3, #622eb6, #97469e);
   background-size: 800% 800%;
 
   -webkit-animation: gradient1 14s ease infinite;
@@ -459,24 +459,25 @@ input[type=button]:hover {
 
 /* Quiz */
 .quiz-container {
-  /* box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2); */
   text-shadow: 1px 1px rgba(255, 255, 255, 0.753);
   padding: 3rem;
   text-shadow: 0 1px #00000010;
   width: 40%;
-  margin: 5rem auto;
+  margin-left: 30%;
+  margin-right: 30%;
   display: flex;
   flex-direction: column;
   background: linear-gradient(360deg, transparent, #ffffff9a);
-  min-height: 45vh;
+  min-height: 40vh;
   border-radius: 15px;
+  justify-content: center;
 }
 .title {
   margin-top: 0;
-  margin-bottom: 3rem;
+  margin-bottom: 7px;
   color: #00000050;
   font-weight: 400;
-  font-size: 2.5rem;
+  font-size: 20px;
   text-align: center;
   text-transform: uppercase;
 }
@@ -538,29 +539,33 @@ button:focus {
 .result {
   display: flex;
   flex-direction: column;
-  padding: 2rem;
+  padding: 10px;
   justify-content: center;
   align-items: center;
   text-align: center;
+  margin: 5rem auto;
   font-size: 2.5rem;
   min-height: 100vh;
 }
 .final-score {
   color: #00000099;
+  padding: 10px;
 }
 .summary {
   font-size: 1rem;
   text-shadow: 1px 1px #ffffff50;
   color: #00000099;
   background: rgba(255, 255, 255, 0.4);
-  border-radius: 5px;
+  border-radius: 10px;
   display: flex;
+  margin: 5rem auto;
   flex-direction: column;
   align-items: flex-start;
-  padding: 0 2rem;
+  padding: 10px;
   margin-bottom: 2rem;
 }
 .summary h1 {
   align-self: center;
+
 }
 

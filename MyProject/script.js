@@ -8,10 +8,8 @@
       
 
 listOfLinks.forEach(function (link) {
-        
 
 link.addEventListener('click',  () => {
-          
 
     listOfLinks.forEach( (link) => {
             if (link.classList.contains('highlighted')) {
@@ -24,7 +22,6 @@ link.addEventListener('click',  () => {
         let ref = link.href.split('#sectionLink');
         ref = "#section" + ref[1];
           
-
         if (isIE11) {
         window.scrollTo(0, document.querySelector(ref).offsetTop);
         } else {
@@ -72,7 +69,7 @@ var array = Array();
 function add_element_to_array()
 {
  array[x] = document.getElementById("suggestion").value;
-//  alert("Element: " + array[x] + " Added at index " + x);
+ alert("Your suggestion has been added");
  x++;
  document.getElementById("suggestion").value = "";
 }
@@ -111,53 +108,53 @@ const questions = [
   },
   {
     "question":
-      "Select in which order you would value these \"Money, Love & Career",
-    "answer1": "Love, Career, Money",
+      "Which is more important?",
+    "answer1": "Love",
     "answer1Total": "1",
-    "answer2": "Money, Career, Love",
+    "answer2": "Money",
     "answer2Total": "3",
-    "answer3": "Career, Love, Money",
+    "answer3": "Bothx",
     "answer3Total": "2"
   },
   {
     "question": "Best Sentence to describe you?",
-    "answer1": "You work best with your hands.",
+    "answer1": "I work best with my hands.",
     "answer1Total": "3",
-    "answer2": "You are a patient person.",
+    "answer2": "I'm a patient person.",
     "answer2Total": "2",
     "answer3":
-      "Winning a debate matters less to you than making sure no one gets upset.",
+      "I love to learn and discover new things.",
     "answer3Total": "1"
   },
-  // {
-  //   "question": "Which best describes your relationship with food",
-  //   "answer1": "You tend to over-eat when you have company.",
-  //   "answer1Total": "1",
-  //   "answer2": "You tend to eat snacks secretly.",
-  //   "answer2Total": "2",
-  //   "answer3": "You prepare food and don\’t even look at the recipe.",
-  //   "answer3Total": "3"
-  // },
-  // {
-  //   "question":
-  //     "You make plans with a friend and they cancel on you, what do you do?",
-  //   "answer1":
-  //     "Say \"whatever\" and plan a night that'll be GREAT so they don't cancel again.",
-  //   "answer1Total": "3",
-  //   "answer2": "Feel hurt because you were looking forward to tonight.",
-  //   "answer2Total": "2",
-  //   "answer3": "No problem, you kinda wanted to stay home anyway.",
-  //   "answer3Total": "1"
-  // },
-  // {
-  //   "question": "Which of the following colours do you like most?",
-  //   "answer1": "Black",
-  //   "answer1Total": "1",
-  //   "answer2": "Yellow or light blue",
-  //   "answer2Total": "2",
-  //   "answer3": "Red or orange",
-  //   "answer3Total": "3"
-  // }
+  {
+    "question": "Do you follow instructions well?",
+    "answer1": "Yes",
+    "answer1Total": "1",
+    "answer2": "Sometimes",
+    "answer2Total": "2",
+    "answer3": "Not really.",
+    "answer3Total": "3"
+  },
+  {
+    "question":
+      "Do you get annoyed when things don't go your way?",
+    "answer1":
+      "YES, I hate it.",
+    "answer1Total": "3",
+    "answer2": "Depends on the situation.",
+    "answer2Total": "2",
+    "answer3": "No not really.",
+    "answer3Total": "1"
+  },
+  {
+    "question": "Are you an introvert or extrovert?",
+    "answer1": "Introvert",
+    "answer1Total": "1",
+    "answer2": "Extrovert",
+    "answer2Total": "2",
+    "answer3": "A bit of both",
+    "answer3Total": "3"
+  }
 ]
 
 
@@ -228,11 +225,11 @@ function loadNextQuestion () {
          `<h1 class="final-score">Your score: ${totalScore}</h1>
          <div class="summary">
             <h1>Summary</h1>
-            <p>Possible - Personality Traits, see below for a summary based on your results:</p>
-            <p>15 - 21- You Need Help</p>
-            <p>10 - 15 - Good Soul</p>
-            <p>5 - 10 - Meh </p>
-            <p>5 - Are You Even Real</p>
+            <p>Possible - What skill suits you the best, see below based on your results:</p>
+            <p>15 - 21- Tutor</p>
+            <p>10 - 15 - Programmer</p>
+            <p>5 - 10 - Designer </p>
+            <p>5 - Handy man</p>
         </div>
         <button class="restart">Restart Quiz</button>
          `;
