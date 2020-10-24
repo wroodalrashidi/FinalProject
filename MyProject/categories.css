@@ -45,3 +45,54 @@ p{
     font-family: 'Courier New', Courier, monospace;
    
 }
+ /* Gradient background */
+ .gradient1 {
+    background: linear-gradient(154deg, #44509c, #3a6ba3, #622eb6, #97469e);
+    background-size: 800% 800%;
+  
+    -webkit-animation: gradient1 14s ease infinite;
+    -moz-animation: gradient1 14s ease infinite;
+    animation: gradient1 4s ease infinite;
+  }
+  
+  @-webkit-keyframes gradient1 {
+    0% {
+      background-position: 79% 0%
+    }
+  
+    50% {
+      background-position: 22% 100%
+    }
+  
+    100% {
+      background-position: 79% 0%
+    }
+  }
+  
+  @-moz-keyframes gradient1 {
+    0% {
+      background-position: 79% 0%
+    }
+  
+    50% {
+      background-position: 22% 100%
+    }
+  
+    100% {
+      background-position: 79% 0%
+    }
+  }
+  
+  @keyframes gradient1 {
+    0% {
+      background-position: 79% 0%
+    }
+  
+    50% {
+      background-position: 22% 100%
+    }
+  
+    100% {
+      background-position: 79% 0%
+    }
+  }
