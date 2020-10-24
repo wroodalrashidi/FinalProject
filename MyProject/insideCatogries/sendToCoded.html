@@ -5,13 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
+<body class="gradient1">
 
 <style>
     
-body{
-    background-color: rgba(116, 113, 113, 0.767);
-}
+
 
 h2{
 font-size: 40px;
@@ -27,7 +25,7 @@ text-align: center;
     justify-content: space-around;
     align-items: center;
     align-content: center;
-    background-color: rgba(23, 76, 190, 0.644);
+    background-color: rgba(182, 214, 235, 0.671);
     box-shadow:3px 3px 15px rgba(206, 206, 206, 0.493);
     padding: 15px;
     height: 500px;
@@ -66,6 +64,7 @@ text-align: center;
     resize: vertical;
     font-size: 18px;
   }
+
   
 
   /* submit button */
@@ -88,7 +87,57 @@ text-align: center;
     color: rgb(172, 170, 169);
     background-color: rgba(46, 44, 46, 0.651);
   }
+/* Gradient background */
+.gradient1 {
+  background: linear-gradient(154deg, #44509c, #3a6ba3, #622eb6, #97469e);
+  background-size: 700% 700%;
 
+  -webkit-animation: gradient1 14s ease infinite;
+  -moz-animation: gradient1 14s ease infinite;
+  animation: gradient1 4s ease infinite;
+}
+
+@-webkit-keyframes gradient1 {
+  0% {
+    background-position: 79% 0%
+  }
+
+  50% {
+    background-position: 22% 100%
+  }
+
+  100% {
+    background-position: 79% 0%
+  }
+}
+
+@-moz-keyframes gradient1 {
+  0% {
+    background-position: 79% 0%
+  }
+
+  50% {
+    background-position: 22% 100%
+  }
+
+  100% {
+    background-position: 79% 0%
+  }
+}
+
+@keyframes gradient1 {
+  0% {
+    background-position: 79% 0%
+  }
+
+  50% {
+    background-position: 22% 100%
+  }
+
+  100% {
+    background-position: 79% 0%
+  }
+}
 </style>
 
     <form action="mailto:joincoded.com" method="post" enctype="text/plain" class="menu">
